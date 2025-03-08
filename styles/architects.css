@@ -1,9 +1,88 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.work-sans-font {
-    font-family: "Work Sans", sans-serif;
+
+  .work-sans-font {
+    font-family: "Work Sans", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
+
+  /* shared style */
+  .display-flex{
+    display: flex;
+  }
+  .text-gray{
+    color: #424242;
+  }
+
+  /* dark03 */
+  .text-light-gray{
+    color: #727272;
+  }
+  .bg-light{
+   background-color: rgba(255, 144, 14, 0.1);
+  }
+  .btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 0;
+
+    
+  }
+
+  /* header styles */
+
+  /* nav-ber related style */
+  .navbar{
+    justify-content: space-between;
+    align-items: center;
+  }
+   /* font weight bold=700 jkn amra responsive korbo tkn font size pixel e use korbona-rem e use korbo */
+  .brand{
+    font-weight: 700; 
+    font-size: 3rem;
+   }
+ 
+  .nav-item{
+     list-style: none;   
+     margin-right: 30px;
+  }
+
+  .nav-link{
+    text-decoration: none;
+  }
+  .navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+
+  }
+  /* banner related style */
+  .banner-content{
+        max-width: 850px;
+        
+        /* align-items: center; */
+        margin: 0 auto;
+        text-align: center;
+  }
+  .banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+  }
+  .banner-image{
+    width: 100%;
+  }
+  /* responsive media query */
+  @media screen and(max-width: 576px) {
+    .navbar, .nav-links{
+      flex-direction: column;
+    }
+    
+  }
+
